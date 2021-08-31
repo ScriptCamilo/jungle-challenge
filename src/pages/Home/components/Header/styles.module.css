@@ -1,0 +1,27 @@
+.containerImage {
+  background-image: url('../../../../assets/images/header.svg'),
+    linear-gradient(#5912AC, #7E49C3, #C86DD7);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  height: max-content;
+}
+
+.buttonContainer {
+  width: 234px;
+  margin-top: 1rem;
+  height: max-content;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
