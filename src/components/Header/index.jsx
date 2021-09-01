@@ -8,7 +8,7 @@ import styles from './styles.module.css';
 
 function Header() {
   return (
-    <header className={ `container ${styles.containerImage}` }>
+    <header className={ `container ${styles.headerContainer}` }>
       <section className={ styles.header }>
         <img src={ logo } alt="Logo" className={ styles.logo } />
         <div className={ styles.buttonContainer }>
