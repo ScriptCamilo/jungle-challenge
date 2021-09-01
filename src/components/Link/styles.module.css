@@ -1,0 +1,16 @@
+.customLink {
+  color: var(--secondary);
+  font-weight: 500;
+}
+
+.customLink p {
+  display: inline;
+}
+
+.customLink > p span {
+  border-bottom: 1px solid currentColor;
+}
+
+.customLink:hover {
+  opacity: 0.8;
+}
