@@ -36,7 +36,7 @@ function Header() {
 
         <div className={ styles.link }>
           <img src={ player } alt="Player" />
-          <a href="#">See hapu in action (27 seconds)</a>
+          <a href="#"><span>See hapu in action (27 seconds)</span></a>
         </div>
       </section>
 
