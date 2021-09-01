@@ -3,6 +3,8 @@ import React from 'react';
 import Button from '../../../../components/Button';
 
 import logo from '../../../../assets/images/logo.svg';
+import player from '../../../../assets/images/player.svg';
+
 import styles from './styles.module.css';
 
 function Header() {
@@ -18,12 +20,26 @@ function Header() {
       </section>
 
       <section className={ styles.main }>
-        <h2>
-          Easily create or join
-          a local nanny share
-          with Hapu
-        </h2>
+        <div className={ styles.title }>
+          <h2>
+            Easily create or join <br/>
+            a local nanny share <br/>
+            with Hapu
+          </h2>
+          <br/>
+          <p>
+            Hopu is Airbnb for nanny share. Share your
+            home, nanny and costs and create new
+            flexible, affordable solutions in childcare.
+          </p>
+        </div>
+
+        <div className={ styles.link }>
+          <img src={ player } alt="Player" />
+          <a href="#">See hapu in action (27 seconds)</a>
+        </div>
       </section>
+
 
     </header>
   );
