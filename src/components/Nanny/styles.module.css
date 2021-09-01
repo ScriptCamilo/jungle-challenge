@@ -1,8 +1,9 @@
-.nannyContainer {
+section.nannyContainer {
   align-items: center;
   height: max-content;
   background-color: white;
   padding: 1.5rem;
+  border-bottom: 1px solid #DFDFDF;
 }
 
 .link {
@@ -11,8 +12,7 @@
   align-items: center;
   justify-content: center;
   margin: 0.5rem;
-
-  color: var(--secondary);
+  text-align: center;
 
   width: max-content;
   max-width: 70%;

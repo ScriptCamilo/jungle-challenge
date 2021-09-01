@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Button from '../Button';
+import CustomLink from '../Link';
 
 import logo from '../../assets/images/logo.svg';
 import player from '../../assets/images/player.svg';
@@ -27,16 +28,19 @@ function Header() {
           </h2>
           <br/>
           <p>
-            Hopu is Airbnb for nanny share. Share your
+            Hapu is Airbnb for nanny share. Share your
             home, nanny and costs and create new
             flexible, affordable solutions in childcare.
           </p>
         </div>
 
-        <a href="#player" className={ styles.link }>
-          <img src={ player } alt="Player" />
-          <p><span>See hapu in action (27 seconds)</span></p>
-        </a>
+        <CustomLink 
+          href="#player"
+          link="See hapu in action (27 seconds)"
+          className={ styles.link }
+        >
+          <img src={ player } alt="Player" className={ styles.image } />
+        </CustomLink>
       </section>
     </header>
   );
