@@ -1,6 +1,6 @@
 .containerImage {
   background-image: url('../../../../assets/images/header.svg'),
-    linear-gradient(to right bottom, #5912AC, #7E49C3, #C86DD7);
+    linear-gradient(to right bottom, #5912AC 35%, #7E49C3, #C86DD7);
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -38,6 +38,7 @@
 .link {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .link > img {
