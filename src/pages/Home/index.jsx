@@ -37,6 +37,23 @@ function Home() {
             affordable solutions in childcare that work 
             for you and your community.
           </p>
+          <br />
+          <CustomLink href="#ready" link="Ready to get started?" />
+        </Section>
+
+        <hr />
+
+        <Section>
+          <h3>
+            Are you a parent without a 
+            nanny and looking to share?
+          </h3>
+
+          <p>
+            Leave us your name and email and we’ll 
+            update you as soon as a share becomes 
+            available in your area!
+          </p>
         </Section>
       </main>
     </>
