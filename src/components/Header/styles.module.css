@@ -1,5 +1,5 @@
 .containerImage {
-  background-image: url('../../../../assets/images/header.svg'),
+  background-image: url('../../assets/images/header.svg'),
     linear-gradient(to right bottom, #5912AC 35%, #7E49C3, #C86DD7);
   background-repeat: no-repeat;
   background-size: cover;

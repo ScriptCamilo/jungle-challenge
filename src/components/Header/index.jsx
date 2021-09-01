@@ -1,10 +1,9 @@
 import React from 'react';
 
-import Button from '../../../../components/Button';
+import Button from '../Button';
 
-import logo from '../../../../assets/images/logo.svg';
-import player from '../../../../assets/images/player.svg';
-
+import logo from '../../assets/images/logo.svg';
+import player from '../../assets/images/player.svg';
 import styles from './styles.module.css';
 
 function Header() {
@@ -34,13 +33,11 @@ function Header() {
           </p>
         </div>
 
-        <div className={ styles.link }>
+        <a href="#player" className={ styles.link }>
           <img src={ player } alt="Player" />
-          <a href="#"><span>See hapu in action (27 seconds)</span></a>
-        </div>
+          <p><span>See hapu in action (27 seconds)</span></p>
+        </a>
       </section>
-
-
     </header>
   );
 }
