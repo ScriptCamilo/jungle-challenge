@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 
 function Section({ children }) {
   return (
-    <section className={ `container ${styles.mainSection}` }>
+    <section className={ styles.mainSection }>
       { children }
     </section>
   );

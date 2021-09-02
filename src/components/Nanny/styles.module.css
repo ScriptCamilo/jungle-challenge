@@ -1,4 +1,7 @@
 section.nannyContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   height: max-content;
   background-color: white;

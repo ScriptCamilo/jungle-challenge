@@ -48,7 +48,7 @@ function Form() {
         />
       </label>
 
-      <Button className={ styles.formButton }>
+      <Button className={ styles.button }>
         Send
       </Button>
     </form>

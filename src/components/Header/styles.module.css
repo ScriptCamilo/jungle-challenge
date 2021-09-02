@@ -16,10 +16,10 @@
   height: max-content;
 }
 
-.buttonContainer {
+.button {
   width: 234px;
   margin-top: 1rem;
-  height: max-content;
+  height: 2.75rem;
 }
 
 .main {

@@ -7,7 +7,7 @@ import styles from './styles.module.css';
 
 function Nanny() {
   return (
-    <section className={ `container ${styles.nannyContainer}`} >
+    <section className={ styles.nannyContainer } >
       <CustomLink 
         href="#nanny"
         link="Sarah's day care available now in North Sydney"

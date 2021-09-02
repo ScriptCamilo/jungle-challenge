@@ -9,14 +9,12 @@ import styles from './styles.module.css';
 
 function Header() {
   return (
-    <header className={ `container ${styles.headerContainer}` }>
+    <header className={ styles.headerContainer }>
       <section className={ styles.header }>
         <img src={ logo } alt="Logo" className={ styles.logo } />
-        <div className={ styles.buttonContainer }>
-          <Button isButton>
-            Become a Nanny Share Host
-          </Button>
-        </div>
+        <Button isButton className={ styles.button }>
+          Become a Nanny Share Host
+        </Button>
       </section>
 
       <section className={ styles.main }>

@@ -23,8 +23,9 @@
   opacity: 0.5;
 }
 
-.formButton {
+.button {
   margin-top: 1rem;
+  height: 2.75rem;
 }
 
 .formButton, .label input {
