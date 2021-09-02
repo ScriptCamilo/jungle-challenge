@@ -1,9 +1,23 @@
-.shareYourHomeTitle {
-  max-width: 60%;
-  margin: 1rem 0;
+.shareYourHomeTitle, .comingSoon {
+  margin: 2rem 0 1rem 0;
 }
 
 .formTitle {
-  max-width: 90%;
   margin-bottom: 1rem;
+}
+
+.paymentShareTitle {
+  margin: 3rem 0 1rem 0;
+}
+
+.paymentShareTitle, .shareYourHomeTitle {
+  max-width: 60%;
+}
+
+.framework {
+  max-width: 70%;
+}
+
+.comingSoon, .formTitle {
+  max-width: 90%;
 }
