@@ -38,12 +38,10 @@ body {
   color: var(--gray-24);
 }
 
-main {
+main, header, footer {
   display: flex;
   flex-direction: column;
-}
-
-main, header {
+  justify-content: space-between;
   padding: 0 1rem;
 }
 
@@ -70,6 +68,10 @@ p {
   font-size: 1rem;
 }
 
+small {
+  font-size: 0.75rem;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -92,10 +94,4 @@ button {
 
 hr {
   border: 1px solid var(--gray-88);
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }

@@ -5,6 +5,7 @@ import Nanny from '../../components/Nanny';
 import Section from '../../components/Section';
 import Form from '../../components/Form';
 import CustomLink from '../../components/Link';
+import Footer from '../../components/Footer';
 
 import notebook from '../../assets/images/notebook.svg';
 import priceExample from '../../assets/images/priceExample.svg';
@@ -135,6 +136,8 @@ function Home() {
           </p>
         </Section>
       </main>
+
+      <Footer />
     </>
   )
 }
