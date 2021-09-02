@@ -1,6 +1,9 @@
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--primary);
   border-radius: 4px;
-  height: 44px;
+  height: 2.75rem;
   width: 100%;
 }

@@ -13,7 +13,7 @@ function Header() {
       <section className={ styles.header }>
         <img src={ logo } alt="Logo" className={ styles.logo } />
         <div className={ styles.buttonContainer }>
-          <Button>
+          <Button isButton>
             Become a Nanny Share Host
           </Button>
         </div>
