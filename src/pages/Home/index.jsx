@@ -7,6 +7,7 @@ import CustomLink from '../../components/Link';
 
 import notebook from '../../assets/images/notebook.svg';
 import styles from './styles.module.css';
+import Form from '../../components/Form';
 
 function Home() {
   return (
@@ -44,7 +45,7 @@ function Home() {
         <hr />
 
         <Section>
-          <h3>
+          <h3 className={ styles.formTitle }>
             Are you a parent without a 
             nanny and looking to share?
           </h3>
@@ -54,6 +55,8 @@ function Home() {
             update you as soon as a share becomes 
             available in your area!
           </p>
+
+          <Form />
         </Section>
       </main>
     </>

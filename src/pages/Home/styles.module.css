@@ -2,3 +2,8 @@
   max-width: 60%;
   margin: 1rem 0;
 }
+
+.formTitle {
+  max-width: 90%;
+  margin-bottom: 1rem;
+}
