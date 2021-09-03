@@ -2,18 +2,18 @@ import React from 'react';
 
 import CustomLink from '../Link';
 
-import nanny from '../../assets/images/nanny.svg';
+import profileImage from '../../assets/images/profileImage.png';
 import styles from './styles.module.css';
 
-function Nanny() {
+function Profile() {
   return (
-    <section className={ styles.nannyContainer } >
+    <section className={ styles.profileContainer } >
       <CustomLink 
         href="#nanny"
         link="Sarah's day care available now in North Sydney"
         className={ styles.link }
       >
-        <img src={ nanny } alt="Nanny example" />
+        <img src={ profileImage } alt="Nanny example" />
       </CustomLink>
 
       <h5>Wednesday, Thursday, Friday - 7:30 - 5:30</h5>
@@ -21,4 +21,4 @@ function Nanny() {
   );
 }
 
-export default Nanny;
+export default Profile;
