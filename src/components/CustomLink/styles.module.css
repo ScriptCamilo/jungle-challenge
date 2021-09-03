@@ -10,7 +10,3 @@
 .customLink > span span {
   border-bottom: 1px solid currentColor;
 }
-
-.customLink:hover {
-  opacity: 0.8;
-}

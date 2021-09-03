@@ -93,6 +93,10 @@ button {
   line-height: 20px;
 }
 
+button:hover, a:hover {
+  opacity: 0.8;
+}
+
 hr {
   border: 1px solid var(--gray-88);
 }
