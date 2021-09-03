@@ -43,6 +43,7 @@ main, header, footer {
   flex-direction: column;
   justify-content: space-between;
   padding: 0 1rem;
+  width: 100%;
 }
 
 h2 {

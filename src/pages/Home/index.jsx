@@ -1,15 +1,15 @@
 import React from 'react';
 
 import Header from '../../components/Header';
-import Nanny from '../../components/Nanny';
+import Profile from '../../components/Profile';
 import Section from '../../components/Section';
 import Form from '../../components/Form';
 import CustomLink from '../../components/Link';
 import Footer from '../../components/Footer';
 
-import notebook from '../../assets/images/notebook.svg';
-import priceExample from '../../assets/images/priceExample.svg';
-import babyFace from '../../assets/images/babyFace.svg';
+import imageSection1 from '../../assets/images/imageSection1.svg';
+import imageSection3 from '../../assets/images/imageSection3.svg';
+import imageSection5 from '../../assets/images/imageSection5.svg';
 
 import styles from './styles.module.css';
 
@@ -17,11 +17,12 @@ function Home() {
   return (
     <>
       <Header />
-      <Nanny />
+      
+      <Profile />
 
       <main>
         <Section>
-          <img src={ notebook } alt="Interface example using a notebook" />
+          <img src={ imageSection1 } alt="Interface example using a notebook" />
 
           <h3 className={ styles.shareYourHomeTitle}>
             Share your home,
@@ -66,7 +67,7 @@ function Home() {
         <hr />
 
         <Section>
-          <img src={ priceExample } alt="How to choose your price amount" />
+          <img src={ imageSection3 } alt="How to choose your price amount" />
 
           <h3 className={ styles.paymentShareTitle }>
             Shared payments
@@ -117,7 +118,7 @@ function Home() {
 
         <Section>
           <img
-            src={ babyFace } 
+            src={ imageSection5 } 
             alt="A simple svg representation of notes"
           />
 
