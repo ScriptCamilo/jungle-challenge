@@ -3,11 +3,11 @@
   font-weight: 500;
 }
 
-.customLink p {
+.customLink span {
   display: inline;
 }
 
-.customLink > p span {
+.customLink > span span {
   border-bottom: 1px solid currentColor;
 }
 

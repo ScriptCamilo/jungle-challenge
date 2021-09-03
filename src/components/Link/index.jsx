@@ -6,11 +6,11 @@ function CustomLink({ children, href, link, className }) {
   return (
     <a href={ href } className={ `${styles.customLink} ${className}` }>
         { children }
-      <p>
+      <span>
         <span>
           { link }
         </span>
-      </p>
+      </span>
     </a>
   )
 }
