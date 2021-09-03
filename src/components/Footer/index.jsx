@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Button from '../Button';
-import CustomLink from '../Link';
+import CustomLink from '../CustomLink';
 
 import calendarIcon from '../../assets/icons/calendar.svg';
 import hapuLogo from '../../assets/icons/logo.svg';

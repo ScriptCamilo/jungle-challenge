@@ -4,7 +4,7 @@ import Header from '../../components/Header';
 import Profile from '../../components/Profile';
 import Section from '../../components/Section';
 import Form from '../../components/Form';
-import CustomLink from '../../components/Link';
+import CustomLink from '../../components/CustomLink';
 import Footer from '../../components/Footer';
 
 import imageSection1 from '../../assets/images/imageSection1.svg';

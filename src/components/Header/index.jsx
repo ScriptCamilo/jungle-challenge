@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Button from '../Button';
-import CustomLink from '../Link';
+import CustomLink from '../CustomLink';
 
 import imageHeader from '../../assets/images/imageHeader.svg';
 import logo from '../../assets/icons/headerLogo.svg';
