@@ -3,12 +3,11 @@ import React, { useState, useEffect } from 'react';
 import Button from '../Button';
 
 import styles from './styles.module.css';
-import emailValidation from '../../utils/emailValidation';
+import { isEmailValid } from '../../utils/validations';
 
 function Form() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [isEmailValid, setIsEmailValid] = useState(false);
 
   const handleChange = ({target: { value }}, setValue) => {
     setValue(value)
@@ -16,14 +15,12 @@ function Form() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const isValid = emailValidation(email);
 
-    if (!isValid) {
-      setIsEmailValid(emailValidation((email)));
+    if (!isEmailValid(email)) {
       return console.log('error');
     }
 
-    return console.log('sucesso');
+    return console.log('success');
   }
 
   return (
@@ -48,7 +45,7 @@ function Form() {
         />
       </label>
 
-      <Button className={ styles.button }>
+      <Button className={ styles.button } onClick={ handleSubmit }>
         Send
       </Button>
     </form>
