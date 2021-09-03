@@ -1,5 +1,5 @@
 .headerContainer {
-  background-image: url('../../assets/images/header.svg'), var(--overlay);
+  background-image: url('../../assets/images/image.svg'), var(--overlay);
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -22,7 +22,7 @@
   height: 2.75rem;
 }
 
-.main {
+.hero {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

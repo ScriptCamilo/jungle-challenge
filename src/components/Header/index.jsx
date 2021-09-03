@@ -3,8 +3,9 @@ import React from 'react';
 import Button from '../Button';
 import CustomLink from '../Link';
 
-import logo from '../../assets/images/logo.svg';
-import player from '../../assets/images/player.svg';
+import imageHeader from '../../assets/images/imageHeader.svg';
+import logo from '../../assets/icons/headerLogo.svg';
+import player from '../../assets/icons/player.svg';
 import styles from './styles.module.css';
 
 function Header() {
@@ -17,7 +18,7 @@ function Header() {
         </Button>
       </section>
 
-      <section className={ styles.main }>
+      <section className={ styles.hero }>
         <div className={ styles.title }>
           <h2>
             Easily create or join <br/>
