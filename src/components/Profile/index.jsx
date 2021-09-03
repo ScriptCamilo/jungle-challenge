@@ -2,7 +2,7 @@ import React from 'react';
 
 import CustomLink from '../Link';
 
-import profileImage from '../../assets/images/profileImage.png';
+import profileImage from '../../assets/images/profileImage.svg';
 import styles from './styles.module.css';
 
 function Profile() {
