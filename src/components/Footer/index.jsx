@@ -38,12 +38,12 @@ function Footer() {
 
       <img src={ hapuLogo } alt="Logo Hapu" />
 
-      <section className={ styles.links }>
+      <nav className={ styles.links }>
         <a href="share-your-nanny"><h5>Share Your Nanny</h5></a>
         <a href="our-story"><h5>Our Story</h5></a>
         <a href="blog"><h5>Blog</h5></a>
         <a href="terms-privacy"><h5>Terms &amp; Privacy</h5></a>
-      </section>
+      </nav>
 
       <section className={ styles.socialMedia }>
         <a href="https://facebook.com" target="_blank" rel="noreferrer">

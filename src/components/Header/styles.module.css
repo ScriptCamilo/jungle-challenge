@@ -16,6 +16,18 @@
   height: max-content;
 }
 
+.links {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 .button {
   width: 234px;
   margin-top: 1rem;
@@ -35,13 +47,30 @@
   justify-content: space-around;
 }
 
-.link {
+.player {
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
 }
 
-.link > img {
+.player > img {
   margin-right: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  
+}
+
+@media screen and (min-width: 1024px) {
+  .links {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+  }
 }

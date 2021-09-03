@@ -12,7 +12,17 @@ function Header() {
   return (
     <header className={ styles.headerContainer }>
       <section className={ styles.header }>
-        <img src={ logo } alt="Logo" className={ styles.logo } />
+        <div>
+          <img src={ logo } alt="Logo" className={ styles.logo } />
+
+          <nav className={ styles.links }>
+            <a href="share-your-nanny"><h5>Share Your Nanny</h5></a>
+            <a href="our-story"><h5>Our Story</h5></a>
+            <a href="blog"><h5>Blog</h5></a>
+            <a href="terms-privacy"><h5>Terms &amp; Privacy</h5></a>
+          </nav>
+
+        </div>
         <Button isButton className={ styles.button }>
           Become a Nanny Share Host
         </Button>
@@ -36,7 +46,7 @@ function Header() {
         <CustomLink 
           href="#player"
           link="See hapu in action (27 seconds)"
-          className={ styles.link }
+          className={ styles.player }
         >
           <img src={ player } alt="Player" className={ styles.image } />
         </CustomLink>
