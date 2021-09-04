@@ -1,10 +1,7 @@
 .customLink {
   color: var(--secondary);
-  font-weight: 500;
-}
-
-.customLink span {
-  display: inline;
+  width: auto;
+  font-size: 1rem;
 }
 
 .customLink > span span {
