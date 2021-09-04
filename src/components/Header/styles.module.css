@@ -1,5 +1,5 @@
 .headerContainer {
-  background-image: url('../../assets/images/image.svg'), var(--overlay);
+  background-image: url('../../assets/images/imageMobile.svg'), var(--overlay);
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -13,7 +13,7 @@
   align-items: center;
 }
 
-.links, .signin {
+.links, .signin, .imageHeader {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -32,6 +32,10 @@
 }
 
 .hero {
+  height: 100%;
+}
+
+.hero > div {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -41,7 +45,6 @@
 .title {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
 }
 
@@ -54,6 +57,8 @@
   align-items: center;
   justify-content: center;
   color: white;
+  width: max-content;
+  align-self: center;
 }
 
 .player > img {
@@ -68,7 +73,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .links, .signin {
+  .links, .signin, .imageHeader {
     position: static;
     width: auto;
     height: auto;
@@ -79,14 +84,18 @@
     white-space: normal;
   }
 
+  .headerContainer {
+    background-image: url('../../assets/images/image.svg'), var(--overlay);
+  }
+
   .header {
     justify-content: flex-start;
   }
 
   nav.links {
     margin-left: 1rem;
-    justify-content: space-around;
-    width: 40%;
+    justify-content: space-evenly;
+    width: 500px;
   }
 
   .button {
@@ -95,5 +104,34 @@
 
   .signin {
     padding: 1rem;
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .hero > div {
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    width: 40%;
+  }
+
+  .title {
+    margin: 2rem 0;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .title p {
+    font-size: 1.2rem;
+    width: 85%;
+  }
+
+  .player {
+    font-size: 1.1rem;
+    align-self: flex-start;
   }
 }
