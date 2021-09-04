@@ -1,8 +1,9 @@
-.shareYourHomeTitle, .comingSoon {
+.shareYourHomeTitle,
+.comingSoon > h3 {
   margin: 2rem 0 1rem 0;
 }
 
-section.rowSection > div {
+section.rowSection > div, .framework, .comingSoon {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,8 +22,9 @@ section.rowSection > div {
   max-width: 60%;
 }
 
-.framework {
+.framework > h3 {
   max-width: 70%;
+  margin-bottom: 1rem;
 }
 
 .billingImage {
@@ -38,17 +40,18 @@ section.rowSection > div {
   display: flex;
 }
 
-.comingSoon, .formTitle {
+.comingSoon > h3, .formTitle {
   max-width: 90%;
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .shareYourHomeTitle {
     width: max-content;
   }
 
   section.rowSection {
     flex-direction: row;
+    align-items: flex-start;
   }
   
   section.rowSection:nth-child(1) {
@@ -70,5 +73,40 @@ section.rowSection > div {
 
   .form {
     width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .billingImage {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+    margin: 3rem 0 2rem 0;
+  }
+
+  .shareYourHomeTitle, .paymentShareTitle, .framework > h3, .comingSoon > h3 {
+    font-size: 1.6rem;
+  }
+
+  .paymentShareTitle {
+    max-width: 100%;
+    margin: 0 0 1rem 0;
+  }
+
+  .framework, .comingSoon {
+    width: 80%;
+  }
+
+  section.rowSection:nth-child(5) > img {
+    padding: 0 1rem;
+  }
+
+  section.rowSection:nth-child(5) > div {
+    width: 60%;
   }
 }

@@ -98,25 +98,27 @@ function Home() {
         <hr />
 
         <Section>
-          <h3 className={ styles.framework }>
-            A framework built for 
-            the long term
-          </h3>
+          <div className={ styles.framework }>
+            <h3>
+              A framework built for 
+              the long term
+            </h3>
 
-          <p>
-            Childcare is for the long term. And you 
-            need a framework you can count on that 
-            gives your share long term viability and 
-            success. That’s why we’ve defined Hapu 
-            around our three tribal principles; clearly 
-            defined process, transparency over money 
-            and equality of participation.
-          </p> <br />
+            <p>
+              Childcare is for the long term. And you 
+              need a framework you can count on that 
+              gives your share long term viability and 
+              success. That’s why we’ve defined Hapu 
+              around our three tribal principles; clearly 
+              defined process, transparency over money 
+              and equality of participation.
+            </p> <br />
 
-          <CustomLink 
-            href="framework"
-            link="Read how Hapu's tribal background defines our app"
-          />
+            <CustomLink 
+              href="framework"
+              link="Read how Hapu's tribal background defines our app"
+            />
+          </div>
 
           <img 
             src={ imageSection4 }
@@ -128,24 +130,26 @@ function Home() {
         <hr />
 
         <Section>
-          <img
-            src={ imageSection5 } 
-            alt="A simple svg representation of notes"
-          />
+          <div className={ styles.comingSoon }>
+            <img
+              src={ imageSection5 } 
+              alt="A simple svg representation of notes"
+            />
 
-          <h3 className={ styles.comingSoon }>
-            Coming soon: Nanny Share 
-            Daily Diary!
-          </h3>
+            <h3>
+              Coming soon: Nanny Share 
+              Daily Diary!
+            </h3>
 
-          <p>
-            With the Hapu daily diary your nanny will 
-            be able to update you and your sharers 
-            with photos and commentary of the day. 
-            You and sharers will receive notifications 
-            and you’ll be able to login to view the daily 
-            adventures fo your little ones. We can’t wait!
-          </p>
+            <p>
+              With the Hapu daily diary your nanny will 
+              be able to update you and your sharers 
+              with photos and commentary of the day. 
+              You and sharers will receive notifications 
+              and you’ll be able to login to view the daily 
+              adventures fo your little ones. We can’t wait!
+            </p>
+          </div>
         </Section>
       </main>
 
