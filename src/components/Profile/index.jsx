@@ -9,11 +9,11 @@ function Profile() {
   return (
     <section className={ styles.profileContainer } >
       <CustomLink 
-        href="#nanny"
+        href="/profile"
         link="Sarah's day care available now in North Sydney"
         className={ styles.link }
       >
-        <img src={ profileImage } alt="Nanny example" />
+        <img src={ profileImage } alt="Profile example" />
       </CustomLink>
 
       <h5>Wednesday, Thursday, Friday - 7:30 - 5:30</h5>

@@ -82,6 +82,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  opacity: 0.5;
+}
+
 input {
   border: none;
   outline: none;
@@ -97,8 +101,8 @@ button {
   line-height: 20px;
 }
 
-button:hover, a:hover {
-  opacity: 0.8;
+button:hover {
+  background-color: #028358;
 }
 
 hr {

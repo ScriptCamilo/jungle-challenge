@@ -16,7 +16,27 @@ section.profileContainer {
   justify-content: center;
   margin: 0.5rem;
   text-align: center;
-
   width: max-content;
   max-width: 70%;
+}
+
+@media only screen and (min-width: 1024px) {
+  section.profileContainer {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .profileContainer > h5 {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .link {
+    flex-direction: row;
+    margin: 0.1rem;
+  }
+
+  .link > img {
+    margin-right: 1.5rem;
+  }
 }

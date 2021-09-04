@@ -46,7 +46,7 @@ function Home() {
               for you and your community.
             </p> <br />
 
-            <CustomLink href="#ready" link="Ready to get started?" />
+            <CustomLink href="ready" link="Ready to get started?" />
           </div>
         </Section>
 
@@ -89,7 +89,7 @@ function Home() {
             </p> <br />
 
             <CustomLink 
-              href="#payment-share"
+              href="payment-share"
               link="Read how Bridget's share (without Hapu) ended over $15"
             />
           </div>
@@ -114,7 +114,7 @@ function Home() {
           </p> <br />
 
           <CustomLink 
-            href="#framework"
+            href="framework"
             link="Read how Hapu's tribal background defines our app"
           />
 

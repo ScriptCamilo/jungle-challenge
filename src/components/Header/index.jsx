@@ -44,7 +44,7 @@ function Header() {
           </div>
 
           <CustomLink 
-            href="#player"
+            href="player"
             link="See hapu in action (27 seconds)"
             className={ styles.player }
           >
