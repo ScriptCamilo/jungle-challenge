@@ -12,27 +12,26 @@ function Header() {
   return (
     <header className={ styles.headerContainer }>
       <section className={ styles.header }>
-        <div>
-          <img src={ logo } alt="Logo" className={ styles.logo } />
+        <img src={ logo } alt="Logo" className={ styles.logo } />
 
-          <nav className={ styles.links }>
-            <a href="share-your-nanny"><h5>Share Your Nanny</h5></a>
-            <a href="our-story"><h5>Our Story</h5></a>
-            <a href="blog"><h5>Blog</h5></a>
-            <a href="terms-privacy"><h5>Terms &amp; Privacy</h5></a>
-          </nav>
+        <nav className={ styles.links }>
+          <a href="share-your-nanny"><h5>Create Your Nanny Share</h5></a>
+          <a href="blog"><h5>Broswer Shares</h5></a>
+          <a href="our-story"><h5>Our Story</h5></a>
+        </nav>
 
-        </div>
         <Button isButton className={ styles.button }>
           Become a Nanny Share Host
         </Button>
+
+        <a href="login" className={ styles.signin }>Sign In</a>
       </section>
 
       <section className={ styles.hero }>
         <div className={ styles.title }>
           <h2>
-            Easily create or join <br/>
-            a local nanny share <br/>
+            Easily create or join
+            a local nanny share
             with Hapu
           </h2>
           <br/>
