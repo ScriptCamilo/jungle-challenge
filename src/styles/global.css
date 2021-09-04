@@ -110,9 +110,14 @@ hr {
   align-self: stretch;
 }
 
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   h2 {
     font-size: 2.6rem;
     line-height: 48px;
+  }
+
+  main > hr {
+    align-self: center;
+    width: 50%;
   }
 }

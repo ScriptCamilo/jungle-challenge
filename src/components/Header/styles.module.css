@@ -86,6 +86,7 @@
 
   .headerContainer {
     background-image: url('../../assets/images/image.svg'), var(--overlay);
+    background-position: right;
   }
 
   .header {
@@ -109,14 +110,14 @@
   .hero {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 
   .hero > div {
     justify-content: center;
     text-align: left;
     align-items: center;
-    width: 40%;
+    width: 50%;
   }
 
   .title {
