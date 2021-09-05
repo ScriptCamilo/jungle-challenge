@@ -8,12 +8,13 @@
 .label {
   display: flex;
   justify-content: flex-end;
-  height: 2.75rem;
+  height: 3rem;
   margin: 0.5rem 0;
+  width: 100%;
 }
 
 .label input {
-  font-size: 1rem;
+  font-size: 0.9rem;
   width: 100%;
   border-radius: 4px;
   border: 1px solid var(--gray-88);
@@ -25,9 +26,28 @@
 
 .button {
   margin-top: 1rem;
-  height: 2.75rem;
+  height: 3rem;
 }
 
-.formButton, .label input {
-  padding: 1.5rem;
+.button, .label input {
+  padding: 1rem;
+}
+@media only screen and (min-width: 1024px) {
+  .form {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 63%;
+    padding: 1rem 0;
+  }
+
+  .label {
+    margin: 0;
+    width: 36%;
+  }
+
+  .button {
+    margin-top: 0;
+    width: 15%;
+  }
 }
