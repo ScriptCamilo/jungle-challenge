@@ -7,12 +7,14 @@
   height: 85vh;
 }
 
+/* LOGO, NAVBAR WITH LINKS, BUTTON AND SIGN IN */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* HIDDING THE ELEMENTS (SR-ONLY) */
 .links, .signin, .imageHeader {
   position: absolute;
   width: 1px;
@@ -73,6 +75,7 @@
 }
 
 @media screen and (min-width: 1024px) {
+  /* SHOWING HIDDEN ELEMENTS */
   .links, .signin, .imageHeader {
     position: static;
     width: auto;
@@ -110,14 +113,16 @@
   .hero {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    align-self: center;
+    max-width: 1024px;
   }
 
   .hero > div {
     justify-content: center;
     text-align: left;
     align-items: center;
-    width: 50%;
+    width: 100%;
   }
 
   .title {
@@ -128,7 +133,7 @@
 
   .title p {
     font-size: 1.2rem;
-    width: 85%;
+    width: 90%;
   }
 
   .player {
