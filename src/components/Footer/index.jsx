@@ -36,26 +36,28 @@ function Footer() {
         link="Or browse local nanny-shares"
       />
 
-      <img src={ hapuLogo } alt="Logo Hapu" />
+      <div className={ styles.links }>
+        <a href="/"><img src={ hapuLogo } alt="Logo Hapu" /></a>
 
-      <nav className={ styles.links }>
-        <a href="share-your-nanny"><h5>Share Your Nanny</h5></a>
-        <a href="our-story"><h5>Our Story</h5></a>
-        <a href="blog"><h5>Blog</h5></a>
-        <a href="terms-privacy"><h5>Terms &amp; Privacy</h5></a>
-      </nav>
+        <nav className={ styles.nav }>
+          <a href="share-your-nanny">Share Your Nanny</a>
+          <a href="our-story">Our Story</a>
+          <a href="blog">Blog</a>
+          <a href="terms-privacy">Terms &amp; Privacy</a>
+        </nav>
 
-      <section className={ styles.socialMedia }>
-        <a href="https://facebook.com" target="_blank" rel="noreferrer">
-          <img src={ facebook } alt="Facebook icon" />
-        </a>
-        <a href="https://twitter.com" target="_blank" rel="noreferrer">
-          <img src={ twitter } alt="Twitter icon" />
-        </a>
-        <a href="https://instagram.com" target="_blank" rel="noreferrer">
-          <img src={ instagram } alt="Instagram icon" />
-        </a>
-      </section>
+        <section className={ styles.socialMedia }>
+          <a href="https://facebook.com" target="_blank" rel="noreferrer">
+            <img src={ facebook } alt="Facebook icon" />
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noreferrer">
+            <img src={ twitter } alt="Twitter icon" />
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noreferrer">
+            <img src={ instagram } alt="Instagram icon" />
+          </a>
+        </section>
+      </div>
 
       <hr />
 
