@@ -95,18 +95,37 @@ section.rowSection > div, .framework, .comingSoon {
 
   .paymentShareTitle {
     max-width: 100%;
-    margin: 0 0 1rem 0;
+  }
+
+  .shareYourHomeTitle, .paymentShareTitle {
+    margin: 0 0 2rem 0;
   }
 
   .framework, .comingSoon {
-    width: 80%;
+    width: 76%;
+  }
+
+  section.rowSection:nth-child(1) > div {
+    padding: 0;
+    width: 43%;
+  }
+
+  section.rowSection:nth-child(1) > img {
+    padding: 0 1rem;
+    width: 57%;
+  }
+
+  section.rowSection:nth-child(5) {
+    justify-content: center;
   }
 
   section.rowSection:nth-child(5) > img {
     padding: 0 1rem;
+    width: 45%;
   }
 
   section.rowSection:nth-child(5) > div {
-    width: 60%;
+    width: 50%;
   }
+
 }
