@@ -20,7 +20,7 @@ function Header() {
           <a href="our-story"><h5>Our Story</h5></a>
         </nav>
 
-        <Button isButton className={ styles.button }>
+        <Button className={ styles.button }>
           Become a Nanny Share Host
         </Button>
 

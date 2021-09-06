@@ -23,7 +23,7 @@ function Footer() {
         </p>
       </div>
 
-      <Button isButton className={ styles.button }>
+      <Button className={ styles.button }>
         <img src={ calendarIcon } alt="Calendar icon" />
         <div>
           <p>Create Your Nanny Share</p>

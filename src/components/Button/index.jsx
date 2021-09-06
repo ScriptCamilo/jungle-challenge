@@ -2,10 +2,10 @@ import React from 'react';
 
 import styles from './styles.module.css';
 
-function Button({ children, isButton, className, onClick }) {
+function Button({ children, isSubmit, className, onClick }) {
   return (
     <button 
-      type={ isButton ? "button" : "submit" } 
+      type={ isSubmit ? "submit" : "button" } 
       className={ `${styles.button} ${className}` }
       onClick={ onClick }
     >
