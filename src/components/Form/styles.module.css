@@ -8,20 +8,34 @@
 .label {
   display: flex;
   justify-content: flex-end;
-  height: 3rem;
-  margin: 0.5rem 0;
+  margin: 0.3rem 0;
   width: 100%;
 }
 
 .label input {
   font-size: 0.9rem;
+  height: 3rem;
   width: 100%;
   border-radius: 4px;
   border: 1px solid var(--gray-88);
 }
 
 .label input::placeholder {
-  opacity: 0.5;
+  opacity: 0.6;
+}
+
+input.requiredError {
+  background-color: var(--error-background);
+  border: 1px solid var(--error-required);
+}
+
+.required {
+  position: absolute;
+  margin-right: 1rem;
+  align-self: center;
+  color: var(--error-required);
+  font-weight: 700;
+  font-size: 0.8rem;
 }
 
 .button {
@@ -32,22 +46,75 @@
 .button, .label input {
   padding: 1rem;
 }
+
+.ok {
+  color: var(--primary);
+}
+
+.error {
+  color: var(--error-message);
+  font-weight: 700;
+}
+
+.ok, .error {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  font-size: 0.9rem;
+  margin-top: 12rem;
+}
+
+
 @media only screen and (min-width: 1024px) {
   .form {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     width: 63%;
-    padding: 1rem 0;
   }
 
   .label {
     margin: 0;
     width: 36%;
+    align-items: center;
+    justify-content: flex-start;
+    height: 6rem;
+  }
+  
+  /*.label input {
+    font-size: 0.9rem;
+    height: 3rem;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid var(--gray-88);
+  }
+  
+  .label input::placeholder {
+    opacity: 0.6;
+  }
+  
+  input.error {
+    background-color: var(--error-background);
+    border: 1px solid var(--error);
+  } */
+  
+  .required {
+    position: absolute;
+    margin: 0;
+    align-self: flex-end;
+    /* margin-top: 1rem; */
+    font-weight: 700;
+    font-size: 0.8rem;
   }
 
   .button {
     margin-top: 0;
     width: 15%;
+  }
+
+  .ok, .error {
+    margin-top: 8rem;
   }
 }

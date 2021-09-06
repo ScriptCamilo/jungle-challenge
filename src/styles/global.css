@@ -11,12 +11,17 @@
 
   /* Overlay */
   --overlay: linear-gradient(314.72deg, #C86DD7 -1.5%, #7E49C3 39.43%, #5912AC 86.02%);
+
+  /* Error */
+  --error-background: #ffe7e7;
+  --error-required: #ffaeae;
+  --error-message: #ff8f8f;
 }
 
 /* 
-  BREAKPOINTS
-  640
-  1024
+  MEDIA QUERY BREAKPOINTS
+  768px
+  1024px
 */
 
 * {
@@ -97,6 +102,10 @@ button {
   font-weight: 500;
   font-family: 'Inter', sans-serif;
   line-height: 20px;
+}
+
+button, a {
+  transition: 0.2s;
 }
 
 button:hover {
