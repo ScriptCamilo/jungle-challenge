@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useExperiment, emitter } from '@marvelapp/react-ab-test';
 import { RiCheckLine, RiErrorWarningLine } from 'react-icons/ri';
 
 import { postForm } from '../../services/jungleApi';
@@ -10,6 +11,8 @@ import Loading from '../Loading';
 import styles from './styles.module.css';
 
 function Form() {
+  const { emitWin } = useExperiment("Jungle Example");
+
   const [isLoading, setIsLoading] = useState(false);
   
   const [inputName, setInputName] = useState('');
@@ -64,6 +67,7 @@ function Form() {
       await postForm({ name: inputName, email: inputEmail });
       setIsLoading(false);
       setFormStatus({ sent: true, ok: true });
+      emitWin();
 
     } catch (error) {
       setIsLoading(false);
@@ -147,5 +151,15 @@ function Form() {
     </form>
   );
 }
+
+// Called when the experiment is displayed to the user
+emitter.addPlayListener(function(experimentName, variantName){
+  console.log("Displaying experiment ‘" + experimentName + "’ variant ‘" + variantName + "’");
+});
+
+// Called when a 'win' is emitted, in this case by emitWin()
+emitter.addWinListener(function(experimentName, variantName){
+  console.log("Variant ‘" + variantName + "’ of experiment ‘" + experimentName + "’  was clicked");
+});
 
 export default Form;
